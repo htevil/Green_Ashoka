@@ -1,0 +1,942 @@
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+
+
+
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<meta name="theme-color" content="#111"/>
+<meta name="msapplication-navbutton-color" content="#111"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="#111"/>
+
+
+
+<title>MEDICINAL</title>
+
+
+
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+
+
+<link rel="stylesheet" href="swiper.min.css"/>
+
+
+<link href='https://fonts.googleapis.com/css?family=Alatsi' rel='stylesheet'/>
+<link href='https://fonts.googleapis.com/css?family=Eagle Lake' rel='stylesheet'/>
+
+
+<style type="text/css">
+
+
+
+
+
+body{
+font-family:'Alatsi';
+margin:0;
+padding:0;
+background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+user-select:none;
+}
+
+/** Top Navigation **/
+
+#top_nav_cont{
+width:100%;
+position:fixed;
+top:0;
+left:0;
+transition:0.5s;
+background:rgba(0,0,0,0.2);
+box-shadow:0px 0px 10px #111;
+z-index:10;
+}
+
+#nav_btn_cont{
+margin-top:17px;
+margin-right:40px;
+display:inline-block;
+float:right;
+}
+
+#nav_btn{
+margin-right:2px;
+display:inline-block;
+border-radius:5px;
+padding:8px;
+color:#eee;
+cursor:pointer;
+}
+
+#nav_btn:hover{
+color:#3CBD5E;
+border:2.2px solid #3CBD5E;
+padding:5.8px;
+background:rgba(200,200,200,0.1);
+}
+
+#ashoka_img{
+display:inline-block;
+float:left;
+cursor:pointer;
+margin:5px;
+border:2px solid rgba(0,0,0,0);
+margin-left:40px;
+border-radius:5px;
+}
+
+#ashoka_img:hover{
+border:2px solid #3cbd5e;
+border-radius:5px;
+}
+
+
+/**Slideshow**/
+
+#page_title{
+margin-top:-60px;
+background:url(Image/medicinal.jpg);
+background-position:center;
+background-repeat:no-repeat;
+background-size:100% 100%; 
+box-shadow:0px 0px 10px #111;
+}
+
+#page_title_p{
+padding-top:220px;
+padding-bottom:190px;
+font-size:50px;
+font-weight:900;
+color:#fff;
+font-family:'Eagle Lake';
+}
+
+/*About_section*/
+
+#about_ashoka{
+width:85%;
+margin-top:-22px;
+margin-bottom:22px;
+background:rgba( 0,0,0,0);
+border-radius:10px;
+box-shadow:0px 0px 7px #000;
+margin-left:7.5%;
+}
+
+#abt_sec_txt{
+text-align:left;
+width:90%;
+color:#333;
+font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+Section Tiles
+*/
+
+#all_section_cont{
+width:100%;
+background:;
+
+display:flex;
+justify-content:center;
+align-items:center;
+flex-wrap:wrap;
+
+}
+
+#section_about{
+text-align:center;
+margin-top:10px;
+margin-bottom:10px;
+}
+
+#section_item{
+width:280px;
+background:#fff;
+box-shadow:0px 0px 10px #999;
+border-radius:10px;
+margin:15px;
+}
+
+#section_img{
+width:280px;
+height:250px;
+border-radius:10px;
+background:#ccc;
+position: relative;
+border-radius:10px 10px 0px 0px;
+
+}
+
+#section_img img{
+width:280px;
+height:250px;
+
+
+
+border-radius:10px 10px 0px 0px;
+
+}
+
+
+#img_over{
+border-radius:10px 10px 0px 0px;
+width:280px;
+height:250px;
+background:rgba(0,0,0,0);
+z-index:9;
+position: absolute;
+top:0;
+left:0;
+transition:all 0.2s;
+}
+
+#view_more{
+text-align:center;
+font-size:20px;
+color:rgba(255,255,255,0);
+width:280px;
+height:250px;
+}
+
+#view_more:hover{
+color:rgba(255,255,255,1);
+}
+
+
+
+#img_over:hover{
+background:rgba(0,0,0,0.4);
+
+}
+
+#tree_name{
+color:#333;
+font-size:20px;
+
+}
+
+
+
+
+
+
+
+
+
+
+/*
+Footer Section
+*/
+
+#footer{
+background:#222;
+display:flex;
+justify-content:center;
+align-items:flex-start;
+flex-direction:row;
+}
+
+#footer_section{
+max-width:30%;
+margin:40px;
+color:#888;
+font-size:14px;
+text-align:left;
+}
+
+#footer_head{
+color:#eee;
+}
+
+#detail{
+cursor:pointer;
+}
+
+#detail:hover{
+color:#1e90ff;
+}
+
+.material-icons{
+font-size:12px;
+color:#1e90ff;
+}
+
+#brand i{
+cursor:pointer;
+font-size:35px;
+
+}
+
+#brand i:hover{
+color:#1e90ff;
+}
+
+#ytbrand i:hover{
+color:#e00;
+}
+
+
+/*
+Copyright
+*/
+
+#copyright{
+background:#222;
+width:100%;
+color:#666;
+font-size:10px;
+float:right;
+}
+
+
+
+
+
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+<title></title>
+</head>
+<body>
+
+
+<!--
+Start
+Top Navigation
+-->
+<div id="top_nav_cont">
+
+
+<div id="nav_btn_cont">
+
+<div id="nav_btn">
+<b onclick="home()">HOME</b>
+</div>
+
+<div id="nav_btn">
+<b onclick="med()">MEDICINAL</b>
+</div>
+
+<div id="nav_btn">
+<b onclick="nmed()">NON-MEDICINAL</b>
+</div>
+
+<div id="nav_btn">
+<b onclick="stat()">STATISTICS</b>
+</div>
+
+</div>
+
+
+
+
+<img id="ashoka_img"
+width="55px"
+src="Image/ashoka2.png"
+onclick="ashoka()"
+/>
+
+</div>
+
+<!--
+End
+Top Navigation
+-->
+
+
+<div id="page_title">
+
+<center>
+<p id="page_title_p">
+MEDICINAL<br>TREES AND PLANTS
+</p>
+</center>
+
+</div>
+
+
+
+
+
+<!--
+Start
+Section of Greens
+-->
+<!--
+Start
+About Ashoka
+-->
+<div id="about_ashoka">
+<center>
+<div id="abt_sec_txt">
+<br/>
+Medicinal plants, also called medicinal herbs, have been discovered and used in traditional medicine practices since prehistoric times. Plants synthesise hundreds of chemical compounds for functions including defence against insects, fungi, diseases, and herbivorous mammals.The earliest historical records of herbs are found from the Sumerian civilisation, where hundreds of medicinal plants including opium are listed on clay tablets. The Ebers Papyrus from ancient Egypt, c. 1550 BC, describes over 850 plant medicines.
+<BR><BR>
+ The Greek physician Dioscorides, who worked in the Roman army, documented over 1000 recipes for medicines using over 600 medicinal plants in De materia medica, c. 60 AD; this formed the basis of pharmacopoeias for some 1500 years. Medicinal plants are widely used in non-industrialized societies, mainly because they are readily available and cheaper than modern medicines. In 2017, the potential global market for botanical extracts and medicines was estimated at several hundred billion dollars. Medicinal plants face both general threats, such as climate change and habitat destruction.
+<br/><br/>
+</div>
+</center>
+</div>
+
+<!--
+END
+About Ashoka
+-->
+
+<div id="all_section_cont">
+
+<div id="section_item" onclick="aloevera()">
+ <div id="section_img">
+    <img src="medimg/Aloe vera.jpg"/>
+    <div id="img_over">
+       <div id="view_more"><br><br><br><br>View More..</div>
+    </div>
+ </div>
+
+ <div id="section_about">
+ <span id="tree_name">Aloe Vera</span><br>
+ </div>
+</div>
+
+
+<div id="section_item" onclick="andrographispaniculata()">
+ <div id="section_img">
+     <img src="medimg/andrographis.jpg"/>
+    <div id="img_over">
+       <div id="view_more"><br><br><br><br>View More..</div>
+    </div>
+ </div>
+
+ <div id="section_about">
+ <span id="tree_name">Andrographis Paniculata</span><br>
+ </div>
+</div>
+
+<div id="section_item" onclick="Alpiniagalanga()">
+ <div id="section_img">
+     <img src="medimg/galanga.jpg"/>
+    <div id="img_over">
+       <div id="view_more"><br><br><br><br>View More..</div>
+    </div>
+ </div>
+
+ <div id="section_about">
+ <span id="tree_name">Alpinia Galanga</span><br>
+ </div>
+</div>
+
+<div id="section_item" onclick="AsianScalystem()">
+ <div id="section_img">
+     <img src="medimg/asian stem.jpg"/>
+    <div id="img_over">
+       <div id="view_more"><br><br><br><br>View More..</div>
+    </div>
+ </div>
+
+ <div id="section_about">
+ <span id="tree_name">Asian Scalystem</span><br>
+ </div>
+</div>
+
+<div id="section_item" onclick="bamboo()">
+ <div id="section_img">
+     <img src="medimg/bamboo.jpg"/>
+    <div id="img_over">
+       <div id="view_more"><br><br><br><br>View More..</div>
+    </div>
+ </div>
+
+ <div id="section_about">
+ <span id="tree_name">Bamboo</span><br>
+
+ </div>
+</div>
+
+<div id="section_item" onclick="Bryophyllumpinnatum()">
+ <div id="section_img">
+     <img src="medimg/bryophylum.jpg"/>
+    <div id="img_over">
+       <div id="view_more"><br><br><br><br>View More..</div>
+    </div>
+ </div>
+
+ <div id="section_about">
+ <span id="tree_name">Bryophyllum pinnatum</span><br>
+ </div>
+</div>
+
+<div id="section_item" onclick="Citruslimetta()">
+ <div id="section_img">
+     <img src="medimg/citrus.jpg"/>
+    <div id="img_over">
+       <div id="view_more"><br><br><br><br>View More..</div>
+    </div>
+ </div>
+
+ <div id="section_about">
+ <span id="tree_name">Citrus limetta</span><br>
+
+ </div>
+</div>
+
+<div id="section_item" onclick="Cymbopogonmartini()">
+ <div id="section_img">
+     <img src="medimg/martini.jpg"/>
+    <div id="img_over">
+       <div id="view_more"><br><br><br><br>View More..</div>
+    </div>
+ </div>
+
+ <div id="section_about">
+ <span id="tree_name">Cymbopogon martinii</span><br>
+ </div>
+</div>
+
+<div id="section_item" onclick="Holybasil()">
+ <div id="section_img">
+     <img src="medimg/Holy basil.jpg"/>
+    <div id="img_over">
+       <div id="view_more"><br><br><br><br>View More..</div>
+    </div>
+ </div>
+
+ <div id="section_about">
+ <span id="tree_name">Holy basil</span><br>
+ </div>
+</div>
+
+<div id="section_item" onclick="Ocimumcanum()">
+ <div id="section_img">
+     <img src="medimg/ocimum.jpg"/>
+    <div id="img_over">
+       <div id="view_more"><br><br><br><br>View More..</div>
+    </div>
+ </div>
+
+ <div id="section_about">
+ <span id="tree_name">Ocimum americanum</span><br>
+ </div>
+</div>
+
+<div id="section_item" onclick="Patchouli()">
+ <div id="section_img">
+     <img src="medimg/patchouli.jpg"/>
+    <div id="img_over">
+       <div id="view_more"><br><br><br><br>View More..</div>
+    </div>
+ </div>
+
+ <div id="section_about">
+ <span id="tree_name">Patchouli</span><br>
+ </div>
+</div>
+
+<div id="section_item" onclick="Sarpagandha()">
+ <div id="section_img">
+     <img src="medimg/sarpgandha.jpg"/>
+    <div id="img_over">
+       <div id="view_more"><br><br><br><br>View More..</div>
+    </div>
+ </div>
+
+ <div id="section_about">
+ <span id="tree_name">Sarpagandha</span><br>
+ </div>
+</div>
+
+<div id="section_item" onclick="shatavari()">
+ <div id="section_img">
+     <img src="medimg/shatavari.jpg"/>
+    <div id="img_over">
+       <div id="view_more"><br><br><br><br>View More..</div>
+    </div>
+ </div>
+
+ <div id="section_about">
+ <span id="tree_name">Shatavari</span><br>
+
+ </div>
+</div>
+
+<div id="section_item" onclick="Thecurrytree()">
+ <div id="section_img">
+     <img src="medimg/curry tree.jpg"/>
+    <div id="img_over">
+       <div id="view_more"><br><br><br><br>View More..</div>
+    </div>
+ </div>
+
+ <div id="section_about">
+ <span id="tree_name">Curry tree</span><br>
+ </div>
+</div>
+
+<div id="section_item" onclick="Vetiveriazizanioides()">
+ <div id="section_img">
+     <img src="medimg/vetiver.jpg"/>
+    <div id="img_over">
+       <div id="view_more"><br><br><br><br>View More..</div>
+    </div>
+ </div>
+
+ <div id="section_about">
+ <span id="tree_name">Vetiver</span><br>
+ </div>
+</div>
+
+<div id="section_item" onclick="vinoa()">
+ <div id="section_img">
+     <img src="medimg/vinoa.jpg"/>
+    <div id="img_over">
+       <div id="view_more"><br><br><br><br>View More..</div>
+    </div>
+ </div>
+
+ <div id="section_about">
+ <span id="tree_name">Vinoa</span><br>
+ </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+<!--
+End
+Section of Greens
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+Start
+Footer
+-->
+
+<br><br>
+<div id="footer">
+
+
+<br><br>
+<div id="footer_section">
+<span id="footer_head">
+CONTACT
+</span>
+<br><br>
+<i class="material-icons">mail_outline</i> Email : <span id="detail">info@ashokainstitute.com</span>
+<br>
+<i class="material-icons">phone</i> Phone : <span id="detail">+91-9198840005</span>, <span id="detail">+91-9198840006</span>
+<br>
+<i class="material-icons">chat_bubble_outline</i> Fax : <span id="detail">+91-542-2582255</span>
+<br>
+<i class="material-icons">public</i> Website : <span id="detail" onclick="ashoka()">www.ashokainstitute.com</span>
+</div>
+
+
+<div id="footer_section">
+<span id="footer_head">
+OFFICE
+</span>
+<br><br>
+<i class="material-icons">location_on</i> Address : <span id="detail">Ashoka Engineering Chauraha Paharia, Sarnath, Varanasi-221007 (U.P), INDIA</span>
+<br>
+<i class="material-icons">access_time</i> Time : <span id="detail">9AM - 5PM (Monday - Saturday)</span>
+<br>
+</div>
+
+<div id="footer_section">
+<span id="footer_head">
+JOIN ON
+</span>
+<br><br>
+
+<span id="brand">
+<pre>
+<i class='fab fa-facebook-square' onclick="fb()"></i> <span id="ytbrand"><i class='fab fa-youtube' onclick="yt()"></i> </span><i class='fab fa-twitter-square' onclick="tw()"></i>
+</pre>
+</span>
+
+</div>
+
+
+
+</div>
+<!--
+End
+Footer
+-->
+
+<div id="copyright">
+
+<center>
+<br><br>
+&copy; 2010-2020<br>
+Ashoka Institute of Technology and Management, Varanasi
+<br>
+All Rights Reserved
+<br><br>
+</center>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+<script type="text/javascript">
+
+
+
+function ashoka(){
+window.open("https://www.ashokainstitute.com/","_blank");
+}
+
+function home(){
+window.open("one s3.html","_self");
+}
+
+function med(){
+window.open("med.html","_self");
+}
+
+function nmed(){
+window.open("nmed.html","_self");
+}
+
+function stat(){
+window.open("stat.html","_self");
+}
+
+function fb(){
+window.open("https://www.facebook.com/Ashokavaranasi/","_blank");
+}
+
+function yt(){
+window.open("https://www.youtube.com/user/ashokainstitute","_blank");
+}
+
+function tw(){
+window.open("https://www.twitter.com/ashokavns?lang=en","_blank");
+}
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100){
+    document.getElementById("top_nav_cont").style.background="#222";
+    }
+    else {
+    document.getElementById("top_nav_cont").style.background="rgba(0,0,0,0.2)";    
+    }
+    }
+</script>
+
+
+<!-- Swiper JS -->
+<script src="swiper.min.js"></script>
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper('.swiper-container', {
+    spaceBetween: 30,
+    centeredSlides: true,
+    loop: true,
+    effect: 'coverflow',
+    autoplay: {
+      delay: 1500,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+</script>
+
+
+
+
+
+
+<script type="text/javascript">
+
+
+
+function aloevera(){
+window.open("medicinal/Aloe vera.html","_self");
+}
+
+function andrographispaniculata(){
+window.open("medicinal/Andrographis paniculata.html","_self");
+}
+
+function Alpiniagalanga(){
+window.open("medicinal/Aplinia Galangal.html","_self");
+}
+
+function AsianScalystem(){
+window.open("medicinal/Asian Scaly stem.html","_self");
+}
+
+function bamboo(){
+window.open("medicinal/Bamboo.html","_self");
+}
+
+function Bryophyllumpinnatum(){
+window.open("medicinal/Bryophyllum pinnatum.html","_self");
+}
+
+function Citruslimetta(){
+window.open("medicinal/Citrus limetta.html","_self");
+}
+
+function Cymbopogonmartini(){
+window.open("medicinal/Cymbopogon martini.html","_self");
+}
+
+function Holybasil(){
+window.open("medicinal/Holy basil.html","_self");
+}
+
+function Ocimumcanum(){
+window.open("medicinal/Ocimum canum .html","_self");
+}
+
+function Patchouli(){
+window.open("medicinal/Patchouli.html","_self");
+}
+
+function Sarpagandha(){
+window.open("medicinal/Sarpagandha.html","_self");
+}
+
+function shatavari(){
+window.open("medicinal/shatavari.html","_self");
+}
+
+function Thecurrytree(){
+window.open("medicinal/The curry tree.html","_self");
+}
+
+function Vetiveriazizanioides(){
+window.open("medicinal/Vetiveria zizanioides.HTML","_self");
+}
+
+function vinoa(){
+window.open("medicinal/vinoa.html","_self");
+}
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

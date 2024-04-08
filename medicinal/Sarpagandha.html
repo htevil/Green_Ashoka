@@ -1,0 +1,548 @@
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+
+
+
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<meta name="theme-color" content="#111"/>
+<meta name="msapplication-navbutton-color" content="#111"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="#111"/>
+
+
+
+<title>GREEN ASHOKA | TREES AND PLANTS</title>
+
+
+
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+
+
+<link rel="stylesheet" href="swiper.min.css"/>
+
+
+<link href='https://fonts.googleapis.com/css?family=Alatsi' rel='stylesheet'/>
+<link href='https://fonts.googleapis.com/css?family=Eagle Lake' rel='stylesheet'/>
+
+
+<style type="text/css">
+
+
+
+
+
+body{
+font-family:'Alatsi';
+margin:0;
+padding:0;
+background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+user-select:none;
+}
+
+/** Top Navigation **/
+
+#top_nav_cont{
+width:100%;
+position:fixed;
+top:0;
+left:0;
+transition:0.5s;
+background:#333;
+background-position:center;
+background-repeat:no-repeat;
+background-size:100% 100%; 
+box-shadow:0px 0px 10px #111;
+z-index:10;
+}
+
+#nav_btn_cont{
+margin-top:17px;
+margin-right:40px;
+display:inline-block;
+float:right;
+}
+
+#nav_btn{
+margin-right:2px;
+display:inline-block;
+border-radius:5px;
+padding:8px;
+color:#eee;
+cursor:pointer;
+}
+
+#nav_btn:hover{
+color:#3CBD5E;
+border:2.2px solid #3CBD5E;
+padding:5.8px;
+background:rgba(200,200,200,0.1);
+}
+
+#ashoka_img{
+display:inline-block;
+float:left;
+cursor:pointer;
+margin:5px;
+border:2px solid rgba(0,0,0,0);
+margin-left:40px;
+border-radius:5px;
+}
+
+#ashoka_img:hover{
+border:2px solid #3cbd5e;
+border-radius:5px;
+}
+
+
+/*Top Image*/
+
+
+
+
+#top_img_cont{
+margin-top:90px;
+width:100%;
+
+
+
+}
+
+
+
+
+#img_item{
+width:250px;
+height:250px;
+background:#999;
+border-radius:50%;
+box-shadow:0px 0px 0px #777;
+border:3px solid #555;
+
+}
+
+#img_item img{
+width:250px;
+height:250px;
+background:#999;
+border-radius:50%;
+box-shadow:0px 0px 0px #777;
+
+
+}
+
+#about{
+
+
+width:72%;
+margin-left:12.5%;
+margin-top:20px;
+background:#fff;
+box-shadow:0px 0px 10px #777;
+border-radius:20px;
+text-align:left;
+
+}
+
+#about_head{
+color:#1e90ff;
+text-align:center;
+font-size:35px;
+	}
+
+#about_item{
+color:#444;
+text-align:left;
+margin-left:40px;
+margin-right:40px;
+}
+
+#about_item_head{
+color:#1e90ff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+Footer Section
+*/
+
+#footer{
+background:#222;
+display:flex;
+justify-content:center;
+align-items:flex-start;
+flex-direction:row;
+}
+
+#footer_section{
+max-width:30%;
+margin:40px;
+color:#888;
+font-size:14px;
+text-align:left;
+}
+
+#footer_head{
+color:#eee;
+}
+
+#detail{
+cursor:pointer;
+}
+
+#detail:hover{
+color:#1e90ff;
+}
+
+.material-icons{
+font-size:12px;
+color:#1e90ff;
+}
+
+#brand i{
+cursor:pointer;
+font-size:35px;
+
+}
+
+#brand i:hover{
+color:#1e90ff;
+}
+
+#ytbrand i:hover{
+color:#e00;
+}
+
+
+/*
+Copyright
+*/
+
+#copyright{
+background:#222;
+width:100%;
+color:#666;
+font-size:10px;
+float:right;
+}
+
+
+
+
+
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+<title></title>
+</head>
+<body>
+
+
+<!--
+Start
+Top Navigation
+-->
+<div id="top_nav_cont">
+
+
+<div id="nav_btn_cont">
+
+<div id="nav_btn" onclick="home()">
+<b>HOME</b>
+</div>
+
+<div id="nav_btn" onclick="med()">
+<b>MEDICINAL</b>
+</div>
+
+<div id="nav_btn" onclick="nmed()">
+<b>NON-MEDICINAL</b>
+</div>
+
+<div id="nav_btn" onclick="stat()">
+<b>STATISTICS</b>
+</div>
+
+</div>
+
+
+
+
+<img id="ashoka_img"
+width="55px"
+src="Image/ashoka2.png"
+onclick="ashoka()"
+/>
+
+</div>
+
+<!--
+End
+Top Navigation
+-->
+
+
+<!--
+Start
+Top Image
+-->
+
+<center>
+
+<div id="all">
+<div id="top_img_cont">
+
+   <div id="img_item">
+  <img 
+  width="100%"
+  height="100%"
+  src="Image/sarpgandha.jpg"/>
+  
+   </div>      
+</div>
+</center>
+
+
+<!--
+End
+Top Image
+-->
+
+
+<!--
+Start
+About Green
+-->
+
+<div id="about">
+<center>
+<br>
+<span id="about_head">
+Sarpagandha
+</span>
+
+
+<div id="about_item"><BR>
+<span id="about_item_head">
+About
+</span><BR>
+<br>
+Rauwolfia serpentina, commonly known as Sarpagandha is a perennial and an evergreen shrub. It is a widely known medicinal plant, with uses such as a remedy high BP and as a sedative. But more importantly, Sarpagandha is used to cure snake bites and remove the toxin. It grows in lower Himalayas, the Eastern and Western Ghats, and the Andaman. It is said the Alexander the Great used Sarpagandha to cure Ptolemy, his general when he was hit by a poisoned arrow. The plant also finds its name in Chinese texts.
+</div>
+
+<div id="about_item">
+<br>
+<span id="about_item_head">
+Usage
+</span>
+<br>
+<p id="item_p">
+• Sarpagandha is also known as snakeroot, and not without a reason. Not only does the lower body of the plant look like a snake, it acts as a panacea during snake bites. It is highly rich in alkaloid content.
+<br><br>
+• Sarpagandha’s root juice is beneficial in removing toxins from the skin. This also helps to decrease excess secretion from oil glands and thus keeps the skin free from pimples and boils.
+<br><br>
+• Sarpagandha is very helpful in providing relief in case of an allergic reaction, causing Urticaria. It is good for many other skin problems as well.
+</p>
+<span id="about_item_head">
+Total number   
+</span>
+ = 14
+</div><br><br>
+
+
+</div>
+
+
+</div>
+
+
+<!--
+End
+About Green
+-->
+
+
+
+<!--
+Start
+Footer
+-->
+
+<br><br>
+<div id="footer">
+
+
+<br><br>
+<div id="footer_section">
+<span id="footer_head">
+CONTACT
+</span>
+<br><br>
+<i class="material-icons">mail_outline</i> Email : <span id="detail">info@ashokainstitute.com</span>
+<br>
+<i class="material-icons">phone</i> Phone : <span id="detail">+91-9198840005</span>, <span id="detail">+91-9198840006</span>
+<br>
+<i class="material-icons">chat_bubble_outline</i> Fax : <span id="detail">+91-542-2582255</span>
+<br>
+<i class="material-icons">public</i> Website : <span id="detail" onclick="ashoka()">www.ashokainstitute.com</span>
+</div>
+
+
+<div id="footer_section">
+<span id="footer_head">
+OFFICE
+</span>
+<br><br>
+<i class="material-icons">location_on</i> Address : <span id="detail">Ashoka Engineering Chauraha Paharia, Sarnath, Varanasi-221007 (U.P), INDIA</span>
+<br>
+<i class="material-icons">access_time</i> Time : <span id="detail">9AM - 5PM (Monday - Saturday)</span>
+<br>
+</div>
+
+<div id="footer_section">
+<span id="footer_head">
+JOIN ON
+</span>
+<br><br>
+
+<span id="brand">
+<pre>
+<i class='fab fa-facebook-square' onclick="fb()"></i> <span id="ytbrand"><i class='fab fa-youtube' onclick="yt()"></i> </span><i class='fab fa-twitter-square' onclick="tw()"></i>
+</pre>
+</span>
+
+</div>
+
+
+
+</div>
+<!--
+End
+Footer
+-->
+
+<div id="copyright">
+
+<center>
+<br><br>
+&copy; 2010-2020<br>
+Ashoka Institute of Technology and Management, Varanasi
+<br>
+All Rights Reserved
+<br><br>
+</center>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
+
+
+
+
+<script type="text/javascript">
+
+function ashoka(){
+window.open("https://www.ashokainstitute.com/","_blank");
+}
+
+function home(){
+window.open("../one s3.html","_self");
+}
+
+function med(){
+window.open("../med.html","_self");
+}
+
+function nmed(){
+window.open("../nmed.html","_self");
+}
+
+function stat(){
+window.open("../stat.html","_self");
+}
+
+function fb(){
+window.open("https://www.facebook.com/Ashokavaranasi/","_blank");
+}
+
+function yt(){
+window.open("https://www.youtube.com/user/ashokainstitute","_blank");
+}
+
+function tw(){
+window.open("https://www.twitter.com/ashokavns?lang=en","_blank");
+}
+
+
+
+</script>
+
+

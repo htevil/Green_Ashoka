@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<meta name="theme-color" content="#111"/>
+<meta name="msapplication-navbutton-color" content="#111"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="#111"/>
+
+<title>GREEN ASHOKA | TREES AND PLANTS</title>
+
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+
+
+<link rel="stylesheet" href="swiper.min.css"/>
+
+
+<link href='https://fonts.googleapis.com/css?family=Alatsi' rel='stylesheet'/>
+<link href='https://fonts.googleapis.com/css?family=Eagle Lake' rel='stylesheet'/>
+
+
+<style type="text/css">
+
+
+
+
+
+body{
+font-family:'Alatsi';
+margin:0;
+padding:0;
+background-color: #09c7fb;
+background-image: linear-gradient(315deg, #09c7fb 0%, #93fb9d 74%);
+user-select:none;
+}
+
+/** Top Navigation **/
+
+#top_nav_cont{
+width:100%;
+position:fixed;
+top:0;
+left:0;
+transition:0.5s;
+background:rgba(0,0,0,0.2);
+box-shadow:0px 0px 10px #111;
+z-index:10;
+}
+
+#nav_btn_cont{
+margin-top:17px;
+margin-right:40px;
+display:inline-block;
+float:right;
+}
+
+#nav_btn{
+margin-right:2px;
+display:inline-block;
+border-radius:5px;
+padding:8px;
+color:#eee;
+cursor:pointer;
+}
+
+#nav_btn:hover{
+color:#3CBD5E;
+border:2.2px solid #3CBD5E;
+padding:5.8px;
+background:rgba(200,200,200,0.1);
+}
+
+#ashoka_img{
+display:inline-block;
+float:left;
+cursor:pointer;
+margin:5px;
+border:2px solid rgba(0,0,0,0);
+margin-left:40px;
+border-radius:5px;
+}
+
+#ashoka_img:hover{
+border:2px solid #3cbd5e;
+border-radius:5px;
+}
+
+
+/**Slideshow**/
+
+#page_title{
+margin-top:-65px;
+background:url(Image/mountain_forest_stream-wallpaper-1920x1080.jpg);
+background-position:center;
+background-repeat:no-repeat;
+background-size:100% 100%; 
+box-shadow:0px 0px 10px #111;
+}
+
+#page_title_p{
+padding-top:220px;
+padding-bottom:190px;
+font-size:50px;
+font-weight:900;
+color:#fff;
+font-family:'Eagle Lake';
+}
+
+
+.swiper-container{
+display:inline-block;
+box-shadow:0px 0px 10px #999;
+margin-left:20%;
+width:60%;
+height:100%;
+border-radius:10px;
+}
+
+.swiper-slide img{
+width:100%;
+min-height:100px;
+border-radius:10px;
+}
+
+.swiper-slide{
+width:60%;
+min-height:100px;
+border-radius:10px;
+background: #fff;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+/*About_section*/
+
+#about_ashoka{
+width:85%;
+margin-top:-22px;
+margin-bottom:22px;
+background:rgba( 0,0,0,0.4);
+border-radius:10px;
+box-shadow:0px 0px 7px #000;
+margin-left:7.5%;
+}
+
+#abt_sec_txt{
+text-align:left;
+width:90%;
+color:#fff;
+font-size: 17px;
+}
+
+#about_section{
+width:85%;
+background:rgba( 0,0,0,0.4);
+border-radius:10px;
+box-shadow:0px 0px 7px #000;
+margin-left:7.5%;
+margin-top:20px;
+margin-bottom:20px;
+padding-top: 20px;
+padding-bottom: 20px;
+
+}
+
+
+/*
+Content 
+Content-box 
+Cont
+*/
+
+#content_box{
+display:inline-block;
+width:25%;
+margin:auto;
+border-right:3px solid #1e90ff;
+color:#444;
+}
+
+#content_last{
+display:inline-block;
+width:25%;
+margin:auto;
+color:#444;
+}
+
+#content{
+background-color: #f8ef42;
+background-image: linear-gradient(315deg, #f8ef42 0%, #0fd64f 74%);
+width:130px;
+height:130px;
+border-radius:60% 0% 60% 0%;
+display:table;
+cursor:pointer;
+box-shadow:0px 0px 10px #999;
+}
+
+#cont{
+display:table-cell;
+vertical-align:middle;
+horizontal-align:middle;
+}
+
+#content:hover{
+background-color: #f8ef42;
+background-image: linear-gradient(315deg, #0fd64f 30%, #f8ef42 74%);
+}
+
+#con{
+cursor:pointer;
+padding:5px;
+border-radius:7px;
+border:3px solid rgba(0,0,0,0);
+font-size:19px;
+font-color:#000 ;
+font-weight : 700;
+}
+
+#con:hover{
+border:2.4px solid #008000 ;
+color:#008000;
+}
+
+/*
+Footer Section
+*/
+
+#footer{
+background:#222;
+display:flex;
+justify-content:center;
+align-items:flex-start;
+flex-direction:row;
+}
+
+#footer_section{
+max-width:30%;
+margin:40px;
+color:#888;
+font-size:14px;
+text-align:left;
+}
+
+#footer_head{
+color:#eee;
+}
+
+#detail{
+cursor:pointer;
+}
+
+#detail:hover{
+color:#1e90ff;
+}
+
+.material-icons{
+font-size:12px;
+color:#1e90ff;
+}
+
+#brand i{
+cursor:pointer;
+font-size:35px;
+
+}
+
+#brand i:hover{
+color:#1e90ff;
+}
+
+#ytbrand i:hover{
+color:#e00;
+}
+
+
+/*
+Copyright
+*/
+
+#copyright{
+background:#222;
+width:100%;
+color:#666;
+font-size:10px;
+float:right;
+}
+
+
+</style>
+
+<title></title>
+</head>
+<body>
+
+
+<!--
+Start
+Top Navigation
+-->
+<div id="top_nav_cont">
+
+
+<div id="nav_btn_cont">
+
+<div id="nav_btn">
+<b onclick="home()">HOME</b>
+</div>
+
+<div id="nav_btn">
+<b onclick="med()">MEDICINAL</b>
+</div>
+
+<div id="nav_btn">
+<b onclick="nmed()">NON-MEDICINAL</b>
+</div>
+
+<div id="nav_btn">
+<b onclick="stat()">STATISTICS</b>
+</div>
+
+</div>
+
+
+
+
+<img id="ashoka_img"
+width="55px"
+src="Image/ashoka2.png"
+onclick="ashoka()"
+/>
+
+</div>
+
+<!--
+End
+Top Navigation
+-->
+
+
+<div id="page_title">
+
+<center>
+<p id="page_title_p">
+GREEN ASHOKA<br>TREES AND PLANTS
+</p>
+</center>
+
+</div>
+
+
+
+
+<!--
+Start
+About Ashoka
+-->
+<div id="about_ashoka">
+<center>
+<div id="abt_sec_txt">
+<br/>
+ASHOKA institute of technology and 
+management (Ashoka) came into 
+existence on February 22, 2010 
+located at heart of the holy city 
+Varanasi at the distance of 3.5 km 
+from the Varanasi Cantt Railway 
+Station and is also near to the 
+place of enlightenment of Lord 
+Buddha, Sarnath (Rishipattan) at 
+the distance of 1.5Km.
+<br/><br/>
+</div>
+</center>
+</div>
+
+<!--
+END
+About Ashoka
+-->
+
+<!--
+Start
+Slideshow
+-->
+
+
+
+<!-- Swiper -->
+<div class="swiper-container">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide"><img src="Image/one.jpg"/></div>
+    <div class="swiper-slide"><img src="Image/six.jpg"/></div>
+    <div class="swiper-slide"><img src="Image/three.jpg"/></div>
+    <div class="swiper-slide"><img src="Image/seven.jpg"/></div>
+    <div class="swiper-slide"><img src="Image/five.jpg"/></div>
+
+  </div>
+  <!-- Add Pagination -->
+  <div class="swiper-pagination"></div>
+</div>
+<!--
+End
+Slideshow
+-->
+
+
+
+
+
+
+<!--
+Start
+About Section
+-->
+
+<div id="about_section">
+<center>
+<div id="abt_sec_txt">
+<br/>
+
+On the other hand it has the most 
+healthy and clean environment with
+lots of Trees and Eco-friendly systems.
+<br><br>
+The various variety of trees and plants
+make a healthy and sustainable 
+development study.
+<br>
+So, scroll down and have look for 
+efforts and system of Ashoka Institute
+of Technology and Management in making
+green and healthy nature.
+
+<br/><br/>
+</div>
+</center>
+</div>
+
+<!--
+End
+About Section
+-->
+
+
+<!--
+Start
+Cards of section
+-->
+
+<br><br>
+<center>
+
+<br><br><br>
+
+<div id="content_box">
+<div id="content" onclick="stat()">
+<div id="cont">
+<img 
+alt="static"
+width="70px"
+height="70px"
+src="Image/static.png"
+/>
+</div>
+</div>
+<br><br>
+<span id="con" onclick="stat()">STATISTICS</span>
+</div>
+
+<div id="content_box">
+<div id="content" onclick="med()">
+<div id="cont">
+<h1>16 +</h1>
+</div>
+</div>
+<br><br>
+<span id="con" onclick="med()">MEDICINAL</span>
+</div>
+
+<div id="content_last">
+<div id="content" onclick="nmed()">
+<div id="cont">
+<h1>12 +</h1>
+</div>
+</div>
+<br><br>
+<span id="con" onclick="nmed()">NON-MEDICINAL</span>
+</div>
+
+</center>
+
+<br><br><br>
+
+
+<!--
+End
+Cards of section
+-->
+
+
+<!--
+Start
+Footer
+-->
+
+<br><br>
+<div id="footer">
+
+
+<br><br>
+<div id="footer_section">
+<span id="footer_head">
+CONTACT
+</span>
+<br><br>
+<i class="material-icons">mail_outline</i> Email : <span id="detail">info@ashokainstitute.com</span>
+<br>
+<i class="material-icons">phone</i> Phone : <span id="detail">+91-9198840005</span>, <span id="detail">+91-9198840006</span>
+<br>
+<i class="material-icons">chat_bubble_outline</i> Fax : <span id="detail">+91-542-2582255</span>
+<br>
+<i class="material-icons">public</i> Website : <span id="detail" onclick="ashoka()">www.ashokainstitute.com</span>
+</div>
+
+
+<div id="footer_section">
+<span id="footer_head">
+OFFICE
+</span>
+<br><br>
+<i class="material-icons">location_on</i> Address : <span id="detail">Ashoka Engineering Chauraha Paharia, Sarnath, Varanasi-221007 (U.P), INDIA</span>
+<br>
+<i class="material-icons">access_time</i> Time : <span id="detail">9AM - 5PM (Monday - Saturday)</span>
+<br>
+</div>
+
+<div id="footer_section">
+<span id="footer_head">
+JOIN ON
+</span>
+<br><br>
+
+<span id="brand">
+<pre>
+<i class='fab fa-facebook-square' onclick="fb()"></i> <span id="ytbrand"><i class='fab fa-youtube' onclick="yt()"></i> </span><i class='fab fa-twitter-square' onclick="tw()"></i>
+</pre>
+</span>
+
+</div>
+
+
+
+</div>
+<!--
+End
+Footer
+-->
+
+<div id="copyright">
+
+<center>
+<br><br>
+&copy; 2010-2020<br>
+Ashoka Institute of Technology and Management, Varanasi
+<br>
+All Rights Reserved
+<br><br>
+</center>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
+function ashoka(){
+window.open("https://www.ashokainstitute.com/","_blank");
+}
+
+function home(){
+window.open("one s3.html","_self");
+}
+
+function med(){
+window.open("med.html","_self");
+}
+
+function nmed(){
+window.open("nmed.html","_self");
+}
+
+function stat(){
+window.open("stat.html","_self");
+}
+
+function fb(){
+window.open("https://www.facebook.com/Ashokavaranasi/","_blank");
+}
+
+function yt(){
+window.open("https://www.youtube.com/user/ashokainstitute","_blank");
+}
+
+function tw(){
+window.open("https://www.twitter.com/ashokavns?lang=en","_blank");
+}
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100){
+    document.getElementById("top_nav_cont").style.background="#222";
+    }
+    else {
+    document.getElementById("top_nav_cont").style.background="rgba(0,0,0,0.2)";    
+    }
+    }
+</script>
+
+
+<!-- Swiper JS -->
+<script src="swiper.min.js"></script>
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper('.swiper-container', {
+    spaceBetween: 30,
+    centeredSlides: true,
+    loop: true,
+    effect: 'coverflow',
+    autoplay: {
+      delay: 1500,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+</script>
+
+
+
+
+
+
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

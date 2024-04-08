@@ -1,0 +1,832 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+
+
+
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<meta name="theme-color" content="#111"/>
+<meta name="msapplication-navbutton-color" content="#111"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="#111"/>
+
+
+
+<title>NON - MEDICINAL</title>
+
+
+
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+
+
+<link rel="stylesheet" href="swiper.min.css"/>
+
+
+<link href='https://fonts.googleapis.com/css?family=Alatsi' rel='stylesheet'/>
+<link href='https://fonts.googleapis.com/css?family=Eagle Lake' rel='stylesheet'/>
+
+
+<style type="text/css">
+
+
+
+
+
+body{
+font-family:'Alatsi';
+margin:0;
+padding:0;
+background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+user-select:none;
+}
+
+/** Top Navigation **/
+
+#top_nav_cont{
+width:100%;
+position:fixed;
+top:0;
+left:0;
+transition:0.5s;
+background:rgba(0,0,0,0.2);
+box-shadow:0px 0px 10px #111;
+z-index:10;
+}
+
+#nav_btn_cont{
+margin-top:17px;
+margin-right:40px;
+display:inline-block;
+float:right;
+}
+
+#nav_btn{
+margin-right:2px;
+display:inline-block;
+border-radius:5px;
+padding:8px;
+color:#eee;
+cursor:pointer;
+}
+
+#nav_btn:hover{
+color:#3CBD5E;
+border:2.2px solid #3CBD5E;
+padding:5.8px;
+background:rgba(200,200,200,0.1);
+}
+
+#ashoka_img{
+display:inline-block;
+float:left;
+cursor:pointer;
+margin:5px;
+border:2px solid rgba(0,0,0,0);
+margin-left:40px;
+border-radius:5px;
+}
+
+#ashoka_img:hover{
+border:2px solid #3cbd5e;
+border-radius:5px;
+}
+
+
+/**Slideshow**/
+
+#page_title{
+margin-top:-65px;
+background:url("Image/non medicinal.jpg");
+background-position:center;
+background-repeat:no-repeat;
+background-size:100% 100%; 
+box-shadow:0px 0px 10px #111;
+}
+
+#page_title_p{
+padding-top:220px;
+padding-bottom:190px;
+font-size:50px;
+font-weight:900;
+color:#fff;
+font-family:'Eagle Lake';
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+Section Tiles
+*/
+
+#all_section_cont{
+width:100%;
+background:;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-wrap:wrap;
+
+}
+
+#section_item{
+width:250px;
+background:#fff;
+box-shadow:0px 0px 10px #999;
+border-radius:10px;
+margin:15px;
+}
+
+#section_about{
+text-align:center;
+margin-top:10px;
+margin-bottom:10px;
+color:#333;
+}
+
+#section_img{
+width:250px;
+height:250px;
+border-radius:10px;
+background:#ccc;
+position: relative;
+border-radius:10px 10px 0px 0px;
+
+}
+
+
+#section_img img{
+width:250px;
+height:250px;
+
+
+
+border-radius:10px 10px 0px 0px;
+
+}
+
+#img_over{
+border-radius:10px 10px 0px 0px;
+width:250px;
+height:250px;
+background:rgba(0,0,0,0);
+z-index:9;
+position: absolute;
+top:0;
+left:0;
+transition:all 0.2s;
+}
+
+#view_more{
+text-align:center;
+font-size:20px;
+color:rgba(255,255,255,0);
+width:250px;
+height:250px;
+}
+
+#view_more:hover{
+color:rgba(255,255,255,1);
+}
+
+
+
+#img_over:hover{
+background:rgba(0,0,0,0.4);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/*
+Footer Section
+*/
+
+#footer{
+background:#222;
+display:flex;
+justify-content:center;
+align-items:flex-start;
+flex-direction:row;
+}
+
+#footer_section{
+max-width:30%;
+margin:40px;
+color:#888;
+font-size:14px;
+text-align:left;
+}
+
+#footer_head{
+color:#eee;
+}
+
+#detail{
+cursor:pointer;
+}
+
+#detail:hover{
+color:#1e90ff;
+}
+
+.material-icons{
+font-size:12px;
+color:#1e90ff;
+}
+
+#brand i{
+cursor:pointer;
+font-size:35px;
+
+}
+
+#brand i:hover{
+color:#1e90ff;
+}
+
+#ytbrand i:hover{
+color:#e00;
+}
+
+
+/*
+Copyright
+*/
+
+#copyright{
+background:#222;
+width:100%;
+color:#666;
+font-size:10px;
+float:right;
+}
+
+
+
+
+
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+<title></title>
+</head>
+<body>
+
+
+<!--
+Start
+Top Navigation
+-->
+<div id="top_nav_cont">
+
+
+<div id="nav_btn_cont">
+
+<div id="nav_btn">
+<b onclick="home()">HOME</b>
+</div>
+
+<div id="nav_btn">
+<b onclick="med()">MEDICINAL</b>
+</div>
+
+<div id="nav_btn">
+<b onclick="nmed()">NON-MEDICINAL</b>
+</div>
+
+<div id="nav_btn">
+<b onclick="stat()">STATISTICS</b>
+</div>
+
+</div>
+
+
+
+
+<img id="ashoka_img"
+width="55px"
+src="Image/ashoka2.png"
+onclick="ashoka()"
+/>
+
+</div>
+
+<!--
+End
+Top Navigation
+-->
+
+
+<div id="page_title">
+
+<center>
+<p id="page_title_p">
+NON - MEDICINAL<br>TREES AND PLANTS
+</p>
+</center>
+
+</div>
+
+
+
+
+
+<!--
+Start
+Section of Greens
+-->
+
+
+<div id="all_section_cont">
+
+<div id="section_item" onclick="Palmtree()">
+ <div id="section_img">
+ <img src="nmedimg/Palm_tree.jpg"/>
+    <div id="img_over">
+       <div id="view_more"><br><br><br><br>View More..</div>
+    </div>
+ </div>
+
+ <div id="section_about">
+ <span id="tree_name">Palm Tree</span><br>
+ </div>
+</div>
+
+
+<div id="section_item" onclick="Rose()">
+ <div id="section_img">
+  <img src="nmedimg/rose.jpg"/>
+    <div id="img_over">
+       <div id="view_more"><br><br><br><br>View More..</div>
+    </div>
+ </div>
+
+ <div id="section_about">
+ <span id="tree_name">Rose</span><br>
+ </div>
+</div>
+
+<div id="section_item" onclick="Orangejasmine()">
+ <div id="section_img">
+  <img src="nmedimg/jasmine.jpg"/>
+    <div id="img_over">
+       <div id="view_more"><br><br><br><br>View More..</div>
+    </div>
+ </div>
+
+ <div id="section_about">
+ <span id="tree_name">Orange Jasmine</span><br>
+ </div>
+</div>
+
+<div id="section_item" onclick="Mexicanfanpalm()">
+ <div id="section_img">
+  <img src="nmedimg/fan palm.jpg"/>
+    <div id="img_over">
+       <div id="view_more"><br><br><br><br>View More..</div>
+    </div>
+ </div>
+
+ <div id="section_about">
+ <span id="tree_name">Mexican Fan Palm</span><br>
+ </div>
+</div>
+
+<div id="section_item" onclick="Ligustrumjaponicum()">
+ <div id="section_img">
+  <img src="nmedimg/japonicum.jpg"/>
+    <div id="img_over">
+       <div id="view_more"><br><br><br><br>View More..</div>
+    </div>
+ </div>
+
+ <div id="section_about">
+ <span id="tree_name">Ligustrum Japonicum</span><br>
+ </div>
+</div>
+
+<div id="section_item" onclick="Juniperusthurifera()">
+ <div id="section_img">
+  <img src="nmedimg/thuriphera.jpg"/>
+    <div id="img_over">
+       <div id="view_more"><br><br><br><br>View More..</div>
+    </div>
+ </div>
+
+ <div id="section_about">
+ <span id="tree_name">Juniperus Thurifera</span><br>
+ </div>
+</div>
+
+<div id="section_item" onclick="Goldencelebration()">
+ <div id="section_img">
+  <img src="nmedimg/golden.jpg"/>
+    <div id="img_over">
+       <div id="view_more"><br><br><br><br>View More..</div>
+    </div>
+ </div>
+
+ <div id="section_about">
+ <span id="tree_name">Golden celebration</span><br>
+ </div>
+</div>
+
+<div id="section_item" onclick="Ficustree()">
+ <div id="section_img">
+  <img src="nmedimg/ficus.jpg"/>
+    <div id="img_over">
+       <div id="view_more"><br><br><br><br>View More..</div>
+    </div>
+ </div>
+
+ <div id="section_about">
+ <span id="tree_name">Ficus tree</span><br>
+ </div>
+</div>
+
+<div id="section_item" onclick="Dahliapinnata()">
+ <div id="section_img">
+  <img src="nmedimg/pinnata.jpg"/>
+    <div id="img_over">
+       <div id="view_more"><br><br><br><br>View More..</div>
+    </div>
+ </div>
+
+ <div id="section_about">
+ <span id="tree_name">Dahlia Pinnata</span><br>
+ </div>
+</div>
+
+<div id="section_item" onclick="Arecapalm()">
+ <div id="section_img">
+  <img src="nmedimg/Areca.jpg"/>
+    <div id="img_over">
+       <div id="view_more"><br><br><br><br>View More..</div>
+    </div>
+ </div>
+
+ <div id="section_about">
+ <span id="tree_name">Areca Palm</span><br>
+ </div>
+</div>
+
+<div id="section_item" onclick="Arbrovitae()">
+ <div id="section_img">
+  <img src="nmedimg/arbovitae.jpeg"/>
+    <div id="img_over">
+       <div id="view_more"><br><br><br><br>View More..</div>
+    </div>
+ </div>
+
+ <div id="section_about">
+ <span id="tree_name">Arbrovitae</span><br>
+ </div>
+</div>
+
+<div id="section_item" onclick=" Glebioniscoronaria()">
+ <div id="section_img">
+  <img src="nmedimg/coronaria.jpg"/>
+    <div id="img_over">
+       <div id="view_more"><br><br><br><br>View More..</div>
+    </div>
+ </div>
+
+ <div id="section_about">
+ <span id="tree_name">Glebionis Coronaria</span><br>
+ </div>
+</div>
+
+
+
+
+
+
+
+
+</div>
+
+
+
+<!--
+End
+Section of Greens
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+Start
+Footer
+-->
+
+<br><br>
+<div id="footer">
+
+
+<br><br>
+<div id="footer_section">
+<span id="footer_head">
+CONTACT
+</span>
+<br><br>
+<i class="material-icons">mail_outline</i> Email : <span id="detail">info@ashokainstitute.com</span>
+<br>
+<i class="material-icons">phone</i> Phone : <span id="detail">+91-9198840005</span>, <span id="detail">+91-9198840006</span>
+<br>
+<i class="material-icons">chat_bubble_outline</i> Fax : <span id="detail">+91-542-2582255</span>
+<br>
+<i class="material-icons">public</i> Website : <span id="detail" onclick="ashoka()">www.ashokainstitute.com</span>
+</div>
+
+
+<div id="footer_section">
+<span id="footer_head">
+OFFICE
+</span>
+<br><br>
+<i class="material-icons">location_on</i> Address : <span id="detail">Ashoka Engineering Chauraha Paharia, Sarnath, Varanasi-221007 (U.P), INDIA</span>
+<br>
+<i class="material-icons">access_time</i> Time : <span id="detail">9AM - 5PM (Monday - Saturday)</span>
+<br>
+</div>
+
+<div id="footer_section">
+<span id="footer_head">
+JOIN ON
+</span>
+<br><br>
+
+<span id="brand">
+<pre>
+<i class='fab fa-facebook-square' onclick="fb()"></i> <span id="ytbrand"><i class='fab fa-youtube' onclick="yt()"></i> </span><i class='fab fa-twitter-square' onclick="tw()"></i>
+</pre>
+</span>
+
+</div>
+
+
+
+</div>
+<!--
+End
+Footer
+-->
+
+<div id="copyright">
+
+<center>
+<br><br>
+&copy; 2010-2020<br>
+Ashoka Institute of Technology and Management, Varanasi
+<br>
+All Rights Reserved
+<br><br>
+</center>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+<script type="text/javascript">
+
+
+
+function ashoka(){
+window.open("https://www.ashokainstitute.com/","_blank");
+}
+
+function home(){
+window.open("one s3.html","_self");
+}
+
+function med(){
+window.open("med.html","_self");
+}
+
+function nmed(){
+window.open("nmed.html","_self");
+}
+
+function stat(){
+window.open("stat.html","_self");
+}
+
+function fb(){
+window.open("https://www.facebook.com/Ashokavaranasi/","_blank");
+}
+
+function yt(){
+window.open("https://www.youtube.com/user/ashokainstitute","_blank");
+}
+
+function tw(){
+window.open("https://www.twitter.com/ashokavns?lang=en","_blank");
+}
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100){
+    document.getElementById("top_nav_cont").style.background="#222";
+    }
+    else {
+    document.getElementById("top_nav_cont").style.background="rgba(0,0,0,0.2)";    
+    }
+    }
+</script>
+
+
+<!-- Swiper JS -->
+<script src="swiper.min.js"></script>
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper('.swiper-container', {
+    spaceBetween: 30,
+    centeredSlides: true,
+    loop: true,
+    effect: 'coverflow',
+    autoplay: {
+      delay: 1500,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+</script>
+
+
+
+
+
+<script type="text/javascript">
+
+
+
+function Palmtree(){
+window.open("non/Palm tree .html","_self");
+}
+
+function Rose(){
+window.open("non/Rose.html","_self");
+}
+
+function Orangejasmine(){
+window.open("non/Orange jasmine .html","_self");
+}
+
+function Mexicanfanpalm(){
+window.open("non/Mexican fan palm.html","_self");
+}
+
+function Ligustrumjaponicum(){
+window.open("non/Ligustrum japonicum .html","_self");
+}
+
+function Juniperusthurifera(){
+window.open("non/Juniperus thurifera.html","_self");
+}
+
+function Goldencelebration(){
+window.open("non/Golden celebration.html","_self");
+}
+
+function Ficustree(){
+window.open("non/Ficus tree .html","_self");
+}
+
+function Dahliapinnata(){
+window.open("non/Dahlia pinnata .html","_self");
+}
+
+function Arecapalm(){
+window.open("non/Areca palm.html","_self");
+}
+
+function Arbrovitae(){
+window.open("non/Arbrovitae .html","_self");
+}
+
+function  Glebioniscoronaria(){
+window.open("non/ Glebionis coronaria .html","_self");
+}
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
